@@ -31,7 +31,7 @@ const Register = () => {
         navigate(from, { replace: true });
       }
     return (
-        <div className='w-25 m-auto mt-5 bg-secondary border rounded-lg'>
+        <div className='w-50 m-auto mt-5 bg-secondary border rounded-lg'>
          <form className=' text-center border p-5' onSubmit={handleLogin}>
   <div className="form-group">
     <label for="exampleInputEmail1" className='m-2 text-light'>Email address</label>
