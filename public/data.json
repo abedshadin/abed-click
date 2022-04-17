@@ -4,7 +4,9 @@
         "pack":"Silver",
         "click":100,
         "time":1,
-        "team_member":2
+        "team_member":2,
+        "img":"https://i.ibb.co/XLFbjtT/istockphoto-801056864-612x612-removebg-preview.png",
+        "desc":"This service is for Small Family"
 
     },
     {   "id":2,
@@ -12,15 +14,19 @@
         "pack":"Gold",
         "click":500,
         "time":3,
-        "team_member":5
-
+        "team_member":5,
+        "img":"    https://i.ibb.co/vxQT99Y/coin.png",
+        "desc":"This service is for Medium Large Family"
+    
     },
     {   "id":3,
         "price":"10,000",
         "pack":"Diamond",
         "click":1000,
         "time":24,
-        "team_member":10
+        "team_member":10,
+        "img":"https://i.ibb.co/QPKNG5H/cryptocurrency.png",
+        "desc":"This service is for Large Family"
 
     }
 ]
