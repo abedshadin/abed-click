@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../firebase.init';
+import GoogleSignIn from '../Login/GoogleSignIn/GoogleSignIn';
 
 const Register = () => {
     let navigate = useNavigate();
@@ -35,17 +36,21 @@ const Register = () => {
          <form className=' text-center border p-5' onSubmit={handleLogin}>
   <div className="form-group">
     <label for="exampleInputEmail1" className='m-2 text-light'>Email address</label>
-    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" onChange={handleEmail}/>
+    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" onChange={handleEmail} required/>
 
   </div>
   <div className="form-group">
     <label for="exampleInputPassword1" className='m-2 text-light'>Password</label>
-    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" onChange={handlePassword}/>
+    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" onChange={handlePassword} required/>
   </div>
  {error}
   <button type="submit" className="btn btn-success m-2 pe-3 ps-3 pt-2 pb-2">Register</button>
-  <p>Already account ? <Link to='/login' className='text-decoration-none text-light'>Please Login</Link> </p>
+
 </form>
+<div className='text-center'>
+<GoogleSignIn></GoogleSignIn>
+<p>No account ? <Link to='/register' className='text-decoration-none text-light'>Please Register First</Link> </p>
+</div>
         </div>
     );
 };
