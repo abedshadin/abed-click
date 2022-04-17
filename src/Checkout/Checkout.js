@@ -5,8 +5,8 @@ const Checkout = () => {
     const {pack} = useParams();
  
     return (
-        <div>
-         Page No : {pack}
+        <div className='container text-center mt-5'>
+        <h1> Package : {pack}</h1>
         </div>
     );
 };
