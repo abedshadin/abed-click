@@ -6,6 +6,7 @@ import Blogs from './Blogs/Blogs';
 import Checkout from './Checkout/Checkout';
 import Error from './Error/Error';
 import Header from './Header/Header';
+import Footer from './Footer/Footer';
 import Home from './Home/Home';
 import Login from './Login/Login';
 import Register from './Register/Register';
@@ -30,6 +31,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
