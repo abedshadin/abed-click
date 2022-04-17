@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
+import About from './About/About';
 import './App.css';
+import Blogs from './Blogs/Blogs';
 import Checkout from './Checkout/Checkout';
 import Error from './Error/Error';
 import Header from './Header/Header';
@@ -22,6 +24,8 @@ function App() {
           <Checkout></Checkout>
         </RequireAuth>
         } />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<Error />} />

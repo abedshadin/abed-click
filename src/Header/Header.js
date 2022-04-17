@@ -19,7 +19,8 @@ const Header = () => {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto text-danger ">
         <Link to="/home" className='text-light text-decoration-none me-2'>Home</Link>
-        <Link to="/checkout" className='text-light text-decoration-none me-2'>Checkout</Link>
+        <Link to="/blogs" className='text-light text-decoration-none me-2'>Blogs</Link>
+        <Link to="/about" className='text-light text-decoration-none me-2'>About</Link>
         {
             user ? <button onClick={logout}   className='bg-danger text-light '>SignOut</button>:   <Link to="/login" className='text-light text-decoration-none me-2'>Login</Link>
         }
