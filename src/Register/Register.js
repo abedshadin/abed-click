@@ -13,7 +13,7 @@ const Register = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
       const [email,setEmail] = useState('');
       const [password,setPassword] = useState('');
       const [inError,setInError] = useState('');
@@ -23,17 +23,18 @@ const Register = () => {
       const handlePassword = (e) =>{
           setPassword(e.target.value);
       }
-      const handleLogin = (e) =>{
+      const handleregister = async (e) =>{
           e.preventDefault();
           createUserWithEmailAndPassword(email,password);
+         
         
       }
       if(user){
         navigate(from, { replace: true });
       }
     return (
-        <div className='w-50 m-auto mt-5 bg-secondary border rounded-lg mb-5'>
-         <form className=' text-center p-5' onSubmit={handleLogin}>
+        <div className='w-50 m-auto mt-5 bg-secondary border rounded-lg'>
+         <form className=' text-center border p-5' onSubmit={handleregister}>
   <div className="form-group">
     <label for="exampleInputEmail1" className='m-2 text-light'>Email address</label>
     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" onChange={handleEmail} required/>
@@ -45,12 +46,9 @@ const Register = () => {
   </div>
  {error}
   <button type="submit" className="btn btn-success m-2 pe-3 ps-3 pt-2 pb-2">Register</button>
-
+   <GoogleSignIn></GoogleSignIn>
+  <p>Already account ? <Link to='/login' className='text-decoration-none text-light'>Please Login</Link> </p>
 </form>
-<div className='text-center'>
-<GoogleSignIn></GoogleSignIn>
-<p>No account ? <Link to='/register' className='text-decoration-none text-light'>Please Register First</Link> </p>
-</div>
         </div>
     );
 };
