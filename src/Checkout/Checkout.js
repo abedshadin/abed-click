@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const Checkout = () => {
-    const {serviceId} = useParams();
+    const {pack} = useParams();
  
     return (
         <div>
-         Page No : {serviceId}
+         Page No : {pack}
         </div>
     );
 };
