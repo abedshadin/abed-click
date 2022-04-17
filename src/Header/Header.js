@@ -14,7 +14,7 @@ const Header = () => {
         <div>
               <Navbar bg="secondary" expand="lg">
   <Container>
-    <Link to="home" className='text-light text-decoration-none h2'>Wedding Capture</Link>
+    <Link to="home" className='text-light text-decoration-none h2'>Abed Clicker</Link>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto text-danger ">
