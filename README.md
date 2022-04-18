@@ -1,5 +1,5 @@
 # Abed Clicker
-[Live Site](https://github.com/facebook/create-react-app).
+[Live Site](https://wedding-capture.web.app/)
 
 ## Features
 - Login 
