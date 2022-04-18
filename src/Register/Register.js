@@ -33,8 +33,10 @@ const Register = () => {
         navigate(from, { replace: true });
       }
     return (
-        <div className='w-50 m-auto mt-5 bg-secondary border rounded-lg'>
-         <form className=' text-center border p-5' onSubmit={handleregister}>
+      <div className='minRegLogin'>
+        <div className='w-50 m-auto mt-5 pb-5 pt-2 bg-secondary rounded-lg'>
+        <h1 className='text-center mt-2 text-light'>REGISTER</h1>
+         <form className=' text-center  ps-5 pe-5' onSubmit={handleregister}>
   <div className="form-group">
     <label for="exampleInputEmail1" className='m-2 text-light'>Email address</label>
     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" onChange={handleEmail} required/>
@@ -49,6 +51,7 @@ const Register = () => {
    <GoogleSignIn></GoogleSignIn>
   <p>Already account ? <Link to='/login' className='text-decoration-none text-light'>Please Login</Link> </p>
 </form>
+        </div>
         </div>
     );
 };

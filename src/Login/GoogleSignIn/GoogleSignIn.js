@@ -19,7 +19,7 @@ const GoogleSignIn = () => {
  
     return (
         <div>
-             <button className='bg-primary h5 text-light pt-2 pb-2 pe-5 ps-5 rounded-pill' onClick={handleSign}><img src="https://www.svgrepo.com/show/355037/google.svg" alt="" /> SignIn With Google</button>
+             <button className='bg-primary h6 text-light pt-2 pb-2 pe-3 ps-3 rounded-pill' onClick={handleSign}><img src="https://www.svgrepo.com/show/355037/google.svg" alt="" /> SignIn With Google</button>
         </div>
     );
 };
