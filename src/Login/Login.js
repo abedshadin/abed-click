@@ -64,7 +64,7 @@ const Login = () => {
           toast('User not found')
           break;
           default:
-          toast('some')
+          toast('Something Wrong')
       }
     }
   },[error])
